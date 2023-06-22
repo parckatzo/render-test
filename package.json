@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf build && cd ../frontend && npm run build && cp -r build ../backend",
+    "build:ui": "rm -r build/* && cd ../../react/part2 && npm run build && cp dist/* -r '../../back-font-end/render-test/build/'",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "CAMILO PINO TULON",
